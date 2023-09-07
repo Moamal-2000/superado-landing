@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'PT Mono', sans-serif;
+  font-size: 16px;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+:root {
+  --white: #ffffff;
+  --very-light-gray: #EDF0F4;
+  --white-opacity10: #ffffff1a;
+  --white-opacity15: #ffffff26;
+  --black: #000000;
+  --lighter-black: #141414;
+  --black-pearl: #10151A;
+  --liner-black: #10151A, #10151A;
+  --dark-blue: #1B2A40;
+  --dark-shade: #172852;
+  --lighter-dark-shade: #262E37;
+  --gray: #343434;
+  --lighter-gray: #393939;
+  --medium-gray: #8C8C8C;
+  --orange-yellow: #FFD600;
+  --orange-yellow-opacity16: #FFE501;
+  --yellow: #FFE501;
+  --light-yellow: #FFD83D;
+  --liner-yellow: #FFD601, #FFB901;
+  --liner-yellow2: #FFD600, #FFB800;
+  --golden: #F3BA2F;
+  --yellow-gray: #998728;
+  --liner-cyan: #68C0FF, #207ACC;
+  --skyblue: #00ACEE;
+  --cyan-blue: #21A6FA;
+  --cyan-blue-opacity15: #21A6FA;
+  --green-cyan: #01FFB3;
+  --green-cyan-opacity15: #01FFB3;
+  --green: #86F045;
+  --green-opacity15: #86F045;
+  --purple: #8247E5;
+  --liner-purple: #A96BF7, #3103B5;
+  --light-purple: #D04BFF;
+  --light-purple-opacity15: #D04BFF;
+  --pink: #FF49B6;
+  --pink-opacity15: #FF49B6;
+  --tomato: #E84142;
+  --orange: #FF6F03;
+  --light-orange: #FF792E;
+  --light-orange-opacity15: #FF792E;
+  --liner-orange: #FF7421, #EC5901;
+}
