@@ -1,41 +1,31 @@
-@import "./Sass/mixins";
+@import "../../Sass/mixins";
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.website {
+  background-color: var(--blue-gray);
+  padding: 16px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  position: relative;
 }
 
-body {
-  font-family: 'PT Mono', sans-serif;
-  background-color: var(--black-pearl);
-  color: var(--white);
-  font-size: 16px;
+.logoHolder {
+  width: 40px;
+  height: 40px;
+  margin-right: 16px;
 }
 
-.container {
-  width: 80%;
-  margin: 0 auto;
+.logoHolder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-@include medium {
-  .container {
-    width: 96%;
-  }
+.nameWebsite {
+  font-weight: 600;
 }
 
-a {
-  text-decoration: none;
-}
-
-li {
-  list-style: none;
-}
-
-button,
-input {
-  outline: none;
-}
 
 :root {
   --white: #ffffff;

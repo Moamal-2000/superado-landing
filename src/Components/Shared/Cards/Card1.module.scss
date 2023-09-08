@@ -1,41 +1,33 @@
-@import "./Sass/mixins";
+@import "../../../Sass/mixins";
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: var(--blue-gray);
+  width: fit-content;
+  padding: 36px;
+  border-radius: 16px;
+  margin: 50px;
 }
 
-body {
-  font-family: 'PT Mono', sans-serif;
-  background-color: var(--black-pearl);
-  color: var(--white);
-  font-size: 16px;
+.card img {
+
 }
 
-.container {
-  width: 80%;
-  margin: 0 auto;
+.card h3 {
+  color: var(--orange-yellow);
+  font-weight: 600px;
+  margin: 20px 0 4px;
 }
 
-@include medium {
-  .container {
-    width: 96%;
-  }
+.card p {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  width: 368px;
 }
 
-a {
-  text-decoration: none;
-}
-
-li {
-  list-style: none;
-}
-
-button,
-input {
-  outline: none;
-}
 
 :root {
   --white: #ffffff;

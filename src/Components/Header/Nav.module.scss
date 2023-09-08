@@ -1,41 +1,59 @@
-@import "./Sass/mixins";
+@import "../../Sass/mixins";
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.nav {
+  display: flex;
+  align-items: center;
 }
 
-body {
-  font-family: 'PT Mono', sans-serif;
-  background-color: var(--black-pearl);
-  color: var(--white);
-  font-size: 16px;
-}
-
-.container {
-  width: 80%;
-  margin: 0 auto;
-}
-
-@include medium {
-  .container {
-    width: 96%;
+@include small {
+  .nav {
+    display: none;
   }
 }
 
-a {
-  text-decoration: none;
+.nav a {
+  color: var(--white);
+  font-weight: 600;
 }
 
-li {
-  list-style: none;
+.nav ul {
+  display: flex;
+  align-items: center;
 }
 
-button,
-input {
-  outline: none;
+.nav ul li:not(:last-child) {
+  margin-right: 40px;
 }
+
+@include medium {
+  .nav ul li:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+
+.nav ul li a {
+
+}
+
+.twitter {
+  margin-left: 40px;
+  padding: 10px 16px;
+  border-radius: 8px;
+  background-color: var(--lighter-dark-shade);
+}
+
+@include medium {
+  .twitter {
+    margin-left: 20px;
+  }
+}
+
+.twitter i {
+  margin-right: 10px;
+  color: var(--skyblue);
+}
+
+
 
 :root {
   --white: #ffffff;

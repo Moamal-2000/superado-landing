@@ -1,0 +1,14 @@
+@import "../../Sass/mixins";
+
+.header {
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@include large {
+  .header {
+    padding: 20px 10px;
+  }
+}

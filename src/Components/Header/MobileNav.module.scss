@@ -1,0 +1,17 @@
+@import "../../Sass/mixins";
+
+.mobileNavContainer {
+
+}
+
+.mobileNavContainer>i {
+  font-size: 1.6rem;
+  display: none;
+  cursor: pointer;
+}
+
+@include small {
+  .mobileNavContainer>i {
+    display: block;
+  }
+}

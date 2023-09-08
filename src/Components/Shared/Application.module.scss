@@ -1,41 +1,36 @@
-@import "./Sass/mixins";
+@import "../../Sass/mixins";
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.application {
+  background-color: var(--blue-gray);
+  padding: 8px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  position: relative;
 }
 
-body {
-  font-family: 'PT Mono', sans-serif;
-  background-color: var(--black-pearl);
-  color: var(--white);
-  font-size: 16px;
+.color {
+  margin-right: 16px;
+  border-radius: 8px;
+  width: 40px;
+  height: 40px;
+  opacity: .15;
 }
 
-.container {
-  width: 80%;
-  margin: 0 auto;
+.dot {
+  --size: 16px;
+  position: absolute;
+  border-radius: 50%;
+  width: var(--size);
+  height: var(--size);
+  left: calc(8px + 20px - (var(--size) / 2)); /* padding + .color width - (half dor size) */
 }
 
-@include medium {
-  .container {
-    width: 96%;
-  }
+.nameApp {
+  font-weight: 600;
 }
 
-a {
-  text-decoration: none;
-}
-
-li {
-  list-style: none;
-}
-
-button,
-input {
-  outline: none;
-}
 
 :root {
   --white: #ffffff;

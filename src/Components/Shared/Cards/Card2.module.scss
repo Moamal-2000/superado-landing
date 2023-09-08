@@ -1,41 +1,45 @@
-@import "./Sass/mixins";
+@import "../../../Sass/mixins";
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--dark-blue);
+  width: fit-content;
+  border-radius: 16px;
+  margin: 50px;
+  height: 264px;
+  width: 210px;
 }
 
-body {
-  font-family: 'PT Mono', sans-serif;
-  background-color: var(--black-pearl);
-  color: var(--white);
-  font-size: 16px;
+.imgHolder {
+  width: 100%;
 }
 
-.container {
-  width: 80%;
-  margin: 0 auto;
+.imgHolder img {
+  width: 100%;
 }
 
-@include medium {
-  .container {
-    width: 96%;
-  }
+.content {
+  padding: 20px 10px;
 }
 
-a {
-  text-decoration: none;
+.content h3 {
+  color: var(--orange-yellow);
+  font-weight: 600px;
+  margin: 0 0 10px;
+  font-size: .9375rem;
+  letter-spacing: .4px;
+  text-transform: uppercase;
 }
 
-li {
-  list-style: none;
+.content p {
+  font-size: 1rem;
+  font-weight: 600;
+  width: 168px;
+  line-height: 24px;
 }
 
-button,
-input {
-  outline: none;
-}
 
 :root {
   --white: #ffffff;

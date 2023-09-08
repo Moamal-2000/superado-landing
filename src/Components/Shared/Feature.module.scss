@@ -1,40 +1,36 @@
-@import "./Sass/mixins";
+@import "../../Sass/mixins";
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.dots {
+  display: flex;
+  align-items: center;
+  user-select: none;
 }
 
-body {
-  font-family: 'PT Mono', sans-serif;
-  background-color: var(--black-pearl);
-  color: var(--white);
-  font-size: 16px;
-}
+.dots .dot {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: var(--cyan-blue-opacity15);
 
-.container {
-  width: 80%;
-  margin: 0 auto;
-}
+  &.active {
+    background-image: linear-gradient(to bottom, var(--liner-cyan));
+  }
 
-@include medium {
-  .container {
-    width: 96%;
+  &:not(:last-child) {
+    margin-right: 12px;
   }
 }
 
-a {
-  text-decoration: none;
+.feature h3 {
+  color: var(--orange-yellow);
+  font-size: 1.5rem;
+  margin: 26px 0 20px;
 }
 
-li {
-  list-style: none;
-}
-
-button,
-input {
-  outline: none;
+.feature p {
+  width: 290px;
+  font-size: 1.25rem;
+  line-height: 1.6;
 }
 
 :root {
@@ -49,7 +45,6 @@ input {
   --dark-blue: #1B2A40;
   --dark-shade: #172852;
   --lighter-dark-shade: #262E37;
-  --blue-gray: #2c3034;
   --gray: #343434;
   --lighter-gray: #393939;
   --medium-gray: #8C8C8C;
