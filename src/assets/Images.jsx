@@ -16,7 +16,6 @@ import logoFund1 from "../assets/logo-fund1.png";
 import logoFund2 from "../assets/logo-fund2.png";
 import logoFund3 from "../assets/logo-fund3.png";
 import magicFundLogo from "../assets/magic-fund-logo.png";
-import mainLogoBlack from "../assets/main-logo-black.png";
 import mainLogoColored from "../assets/main-logo-colored.png";
 import mainLogoColored2 from "../assets/main-logo-colored2.png";
 import solanaSqlImg from "../assets/solana-sql.png";
@@ -45,7 +44,6 @@ export {
   logoFund2,
   logoFund3,
   magicFundLogo,
-  mainLogoBlack,
   mainLogoColored,
   mainLogoColored2,
   solanaSqlImg,
