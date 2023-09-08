@@ -1,17 +1,16 @@
 @import "../../Sass/mixins";
 
 .mobileNavContainer {
+  display: none;
+}
 
+@include small {
+  .mobileNavContainer {
+    display: block;
+  }
 }
 
 .mobileNavContainer>i {
   font-size: 1.6rem;
-  display: none;
   cursor: pointer;
-}
-
-@include small {
-  .mobileNavContainer>i {
-    display: block;
-  }
 }
