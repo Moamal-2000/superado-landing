@@ -1,36 +1,64 @@
 @import "../../Sass/mixins";
 
-.sectionTitle {
-  position: relative;
-  display: flex;
-  flex-direction: column;
+.mainContainer {
   width: fit-content;
+  margin: 0 auto;
+  text-align: center;
 }
 
-.sectionTitle>*:first-child {
-  font-size: 2.5rem;
-  position: relative;
-  z-index: 2;
+.titleContainer>h2 {
+  font-size: 3.25rem;
+  display: inline-block;
+  line-height: 70px;
 }
 
 @include medium {
-  .sectionTitle>span {
-    font-size: 2rem !important;
+  .titleContainer>h2 {
+    font-size: 2rem;
+    line-height: 40px;
   }
 }
 
-.imgHolder {
-  width: 100%;
+.titleContainer>h2>span {
+  margin-right: 40px;
 }
 
-.imgHolder img {
-  width: calc(100% + 30px);
-  position: absolute;
-  left: -10px;
-  bottom: 0;
-  z-index: 1;
+@include medium {
+  .titleContainer>h2>span {
+    margin-right: 20px;
+  }
 }
 
+.text {
+  font-size: 1.5rem;
+  line-height: 30px;
+  color: var(--medium-gray);
+  text-align: center;
+  margin: 24px auto 70px;
+  width: 730px;
+}
+
+@include medium {
+  .text {
+    font-size: .9375rem;
+    line-height: 20px;
+    width: 300px;
+    margin-bottom: 40px;
+  }
+}
+
+.mainContainer button {
+  border: none;
+  background-image: linear-gradient(to bottom, var(--liner-yellow));
+  color: var(--black-pearl);
+  padding: 16px 34px;
+  border-radius: 12px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  box-shadow: 0 9px 44px rgba(255, 213, 0, .19);
+  user-select: none;
+  cursor: pointer;
+}
 
 
 :root {

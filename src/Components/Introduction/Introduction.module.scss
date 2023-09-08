@@ -1,1 +1,13 @@
 @import "../../Sass/mixins";
+
+.introductionSection {
+  width: 100%;
+  min-height: 500px;
+  padding-top: calc(85px + 100px); /* Top value + Needed padding */
+  position: relative;
+  top: -85px;
+  padding-bottom: 160px;
+  background-image: url("../../assets/bg-stars.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}

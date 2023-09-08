@@ -1,36 +1,8 @@
 @import "../../Sass/mixins";
 
-.sectionTitle {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  width: fit-content;
-}
+.featuresSection {
 
-.sectionTitle>*:first-child {
-  font-size: 2.5rem;
-  position: relative;
-  z-index: 2;
 }
-
-@include medium {
-  .sectionTitle>span {
-    font-size: 2rem !important;
-  }
-}
-
-.imgHolder {
-  width: 100%;
-}
-
-.imgHolder img {
-  width: calc(100% + 30px);
-  position: absolute;
-  left: -10px;
-  bottom: 0;
-  z-index: 1;
-}
-
 
 
 :root {

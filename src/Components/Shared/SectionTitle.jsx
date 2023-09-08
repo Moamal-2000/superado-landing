@@ -1,10 +1,10 @@
 import styles from "./SectionTitle.module.scss";
 
-const SectionTitle = ({ underlineImg, title, display, fontSize }) => {
+const SectionTitle = ({ underlineImg, display, children }) => {
 
   return (
     <div className={styles.sectionTitle} style={{display: display}}>
-      <h2 style={{fontSize: fontSize}}>{title}</h2>
+      {children}
 
       <div className={styles.imgHolder}>
         <img src={underlineImg} alt="mixin paint purple-red-yellow" />
