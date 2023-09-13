@@ -11,6 +11,21 @@
 
 .titleInterSection h3 {
   color: var(--orange-yellow);
-  font-size: 600;
+  font-weight: 700;
   font-size: 2.25rem;
+  text-align: center;
+}
+
+@include medium {
+  .titleInterSection h3 {
+    font-size: 1.5rem;
+    line-height: 36px;
+  }
+}
+
+@include small {
+  .titleInterSection h3 {
+    font-size: 1rem;
+    line-height: 24px;
+  }
 }

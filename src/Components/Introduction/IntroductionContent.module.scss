@@ -10,6 +10,7 @@
   font-size: 3.25rem;
   display: inline-block;
   line-height: 70px;
+  text-shadow: 0 4px 18px rgba(0, 0, 0, .30);
 }
 
 @include medium {
@@ -31,10 +32,11 @@
 
 .text {
   font-size: 1.5rem;
+  font-weight: 400;
   line-height: 30px;
   color: var(--medium-gray);
   text-align: center;
-  margin: 24px auto 70px;
+  margin: 32px auto 80px;
   width: 730px;
 }
 
@@ -51,13 +53,21 @@
   border: none;
   background-image: linear-gradient(to bottom, var(--liner-yellow));
   color: var(--black-pearl);
-  padding: 16px 34px;
-  border-radius: 12px;
-  font-size: 1.2rem;
-  font-weight: 600;
-  box-shadow: 0 9px 44px rgba(255, 213, 0, .19);
+  padding: 16px 40px;
+  border-radius: 16px;
+  font-size: 1.25rem;
+  font-weight: 700;
+  box-shadow: 0 9px 44px rgba(255, 214, 0, .19);
   user-select: none;
   cursor: pointer;
+}
+
+@include medium {
+  .mainContainer button {
+    border-radius: 12px;
+    padding: 12px 30px;
+    font-size: 1.125rem;
+  }
 }
 
 

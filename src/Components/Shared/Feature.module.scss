@@ -6,6 +6,12 @@
   user-select: none;
 }
 
+@include small {
+  .dots {
+    display: none;
+  }
+}
+
 .dots .dot {
   width: 24px;
   height: 24px;
@@ -21,17 +27,59 @@
   }
 }
 
+@include medium {
+  .dots .dot {
+    width: 20px;
+    height: 20px;
+  }
+}
+
 .feature h3 {
   color: var(--orange-yellow);
   font-size: 1.5rem;
-  margin: 26px 0 20px;
+  font-weight: 700;
+  line-height: 36px;
+  margin: 28px 0 8px;
+}
+
+@include medium {
+  .feature h3 {
+    font-size: 1.25rem;
+    line-height: 32px;
+  }
+}
+
+@include small {
+  .feature h3 {
+    margin: 0 0 4px;
+    font-size: 1.125rem;
+    line-height: 24px;
+  }
 }
 
 .feature p {
   min-width: 192px;
   max-width: 252px;
   font-size: 1.25rem;
-  line-height: 1.6;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+@include medium {
+  .feature p {
+    font-size: 1rem;
+    line-height: 28px;
+  }
+}
+
+@include small {
+  .feature p {
+    font-size: .875rem;
+    line-height: 24px;
+    min-width: auto;
+    max-width: 100%;
+    width: 100%;
+  }
 }
 
 :root {

@@ -10,5 +10,20 @@
   display: flex;
   gap: 42px;
   width: 900px;
-  margin: 28px auto 60px;
+  margin: 28px auto 0;
+}
+
+@media (max-width: 1400px) {
+  .operationSystems {
+    width: 640px;
+  }
+}
+
+@include small {
+  .operationSystems {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
 }

@@ -3,12 +3,32 @@
 .bigCard {
   display: flex;
   flex-direction: column;
+  gap: 60px;
   padding: 70px 80px;
   border-radius: 24px;
   border: 3px solid var(--light-yellow2);
   background: var(--white-opacity20);
   margin: 0 auto 200px;
   width: 1064px;
+}
+
+@media (max-width: 1400px) {
+  .bigCard {
+    width: 100%;
+    padding: 36px;
+  }
+}
+
+@include large {
+  .bigCard {
+    width: 700px;
+  }
+}
+
+@include small {
+  .bigCard {
+    width: 100%;
+  }
 }
 
 

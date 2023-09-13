@@ -10,12 +10,34 @@
   position: relative;
 }
 
+@include small {
+  .application {
+    padding: 6px 10px;
+  }
+}
+
 .color {
   margin-right: 16px;
   border-radius: 8px;
   width: 40px;
   height: 40px;
   opacity: .15;
+}
+
+@include large {
+  .color {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+@include small {
+  .color {
+    width: 24px;
+    height: 24px;
+    margin-right: 0;
+    opacity: 0;
+  }
 }
 
 .dot {
@@ -27,10 +49,37 @@
   left: calc(8px + 20px - (var(--size) / 2)); /* padding + .color width - (half dor size) */
 }
 
+@include large {
+  .dot {
+    --size: 14px;
+    left: calc(8px + 18px - (var(--size) / 2));
+  }
+}
+
+@include small {
+  .dot {
+    --size: 12px;
+    left: calc(8px + 10px - (var(--size) / 2));
+  }
+}
+
 .nameApp {
   font-weight: 700;
   font-size: 1.125rem;
   line-height: 32px;
+}
+
+@include large {
+  .nameApp {
+    font-size: .9rem;
+  }
+}
+
+@include small {
+  .nameApp {
+    font-size: .8rem;
+    line-height: 24px;
+  }
 }
 
 

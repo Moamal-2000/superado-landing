@@ -13,6 +13,27 @@
   margin-top: 28px;
 }
 
+@include large {
+  .blockChains {
+    gap: 16px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@include small {
+  .blockChains {
+    gap: 12px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 .blockChains>div {
   flex: 1;
+}
+
+@include large {
+  .blockChains>div {
+    flex: 1;
+  }
 }
