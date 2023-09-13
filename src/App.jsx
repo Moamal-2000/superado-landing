@@ -1,3 +1,4 @@
+import Backed from "./Components/Backed/Backed";
 import BigCard from "./Components/BigCard/BigCard";
 import Features from "./Components/Features/Features";
 import Header from "./Components/Header/Header";
@@ -17,6 +18,7 @@ function App() {
           <BigCard />
           <RoadMap />
           <LearnMore />
+          <Backed />
         </div>
       </div>
     </>

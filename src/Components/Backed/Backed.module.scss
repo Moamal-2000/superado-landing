@@ -1,0 +1,101 @@
+@import "../../Sass/mixins";
+
+.backed {
+  margin: 0 auto;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.backedCompanies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin: 52px 0 28px;
+}
+
+@include medium {
+  .backedCompanies {
+    margin: 24px 0 40px;
+  }
+}
+
+.backedCompanies img {
+  object-fit: contain;
+  user-select: none;
+}
+
+.supporters {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+@include small {
+  .supporters {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+}
+
+.supporters .person {
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  color: var(--white);
+  border-radius: 12px;
+  height: 40px;
+  padding: 8px 20px;
+  font-size: .875rem;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+
+:root {
+  --white: #ffffff;
+  --very-light-gray: #EDF0F4;
+  --white-opacity10: #ffffff1a;
+  --white-opacity15: #ffffff26;
+  --black: #000000;
+  --lighter-black: #141414;
+  --black-pearl: #10151A;
+  --liner-black: #10151A, #10151A;
+  --dark-blue: #1B2A40;
+  --dark-shade: #172852;
+  --lighter-dark-shade: #262E37;
+  --blue-gray: #2c3034;
+  --gray: #343434;
+  --lighter-gray: #393939;
+  --medium-gray: #8C8C8C;
+  --orange-yellow: #FFD600;
+  --orange-yellow-opacity16: #ffe500;
+  --yellow: #FFE501;
+  --light-yellow: #FFD83D;
+  --light-yellow2: #FFD12F;
+  --liner-yellow: #FFD601, #FFB901;
+  --liner-yellow2: #FFD600, #FFB800;
+  --golden: #F3BA2F;
+  --yellow-gray: #998728;
+  --liner-cyan: #68C0FF, #207ACC;
+  --skyblue: #00ACEE;
+  --cyan-blue: #21A6FA;
+  --cyan-blue-opacity15: #21a7fa26;
+  --green-cyan: #01FFB3;
+  --green-cyan-opacity15: #01ff00;
+  --green: #86F045;
+  --green-opacity15: #86F045;
+  --purple: #8247E5;
+  --liner-purple: #A96BF7, #3103B5;
+  --light-purple: #D04BFF;
+  --light-purple-opacity15: #d04b00;
+  --pink: #FF49B6;
+  --pink-opacity15: #FF49B6;
+  --tomato: #E84142;
+  --orange: #FF6F03;
+  --light-orange: #FF792E;
+  --light-orange-opacity15: #ff7900;
+  --liner-orange: #FF7421, #EC5901;
+}
