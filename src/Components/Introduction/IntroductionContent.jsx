@@ -8,7 +8,7 @@ const IntroductionContent = () => {
       <div className={styles.titleContainer}>
         <h2>
           Modern infrastructure <br /> <span>for</span>
-          <SectionTitle underlineImg={underlineImg1} display="inline-block">
+          <SectionTitle underlineImg={underlineImg1} display="inline-block" imgPosition="-10px">
             <span style={{ fontSize: "3.25rem" }}>DAOs</span>
           </SectionTitle>
         </h2>
