@@ -1,0 +1,35 @@
+@import "../../Sass/mixins";
+
+.learnMore {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto 180px;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 44px;
+  margin-top: 52px;
+}
+
+@include large {
+  .cards {
+    gap: 28px;
+  }
+}
+
+@include medium {
+  .cards {
+    margin-top: 30px;
+  }
+}
+
+@include small {
+  .cards {
+    flex-direction: column;
+  }
+}

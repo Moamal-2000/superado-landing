@@ -7,9 +7,26 @@
   background-color: var(--dark-blue);
   width: fit-content;
   border-radius: 16px;
-  margin: 50px;
-  height: 264px;
-  width: 210px;
+  width: 300px;
+}
+
+@include large {
+  .card {
+    width: 280px;
+  }
+}
+
+@include medium {
+  .card {
+    width: 214px;
+  }
+}
+
+@include small {
+  .card {
+    width: 360px;
+    align-items: flex-start;
+  }
 }
 
 .imgHolder {
@@ -21,23 +38,57 @@
 }
 
 .content {
-  padding: 20px 10px;
+  padding: 20px 28px;
+}
+
+@include large {
+  .content {
+    padding: 16px 20px;
+  }
 }
 
 .content h3 {
   color: var(--orange-yellow);
-  font-weight: 600px;
+  font-weight: 700;
   margin: 0 0 10px;
   font-size: .9375rem;
   letter-spacing: .4px;
   text-transform: uppercase;
+  line-height: 36px;
+}
+
+@include medium {
+  .content h3 {
+    font-size: .9rem;
+    line-height: 32px;
+  }
 }
 
 .content p {
-  font-size: 1rem;
-  font-weight: 600;
-  width: 168px;
-  line-height: 24px;
+  font-size: 1.25rem;
+  font-weight: 700;
+  width: 264px;
+  line-height: 32px;
+}
+
+@include large {
+  .content p {
+    font-size: 1rem;
+    line-height: 24px;
+  }
+}
+
+@include medium {
+  .content p {
+    width: 100%;
+    font-size: .8rem;
+  }
+}
+
+@include small {
+  .content p {
+    font-size: 1rem;
+  }
 }
 
 
