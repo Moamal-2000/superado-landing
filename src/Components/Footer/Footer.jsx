@@ -6,20 +6,13 @@ const Footer = () => {
     <footer className={styles.footer}>
       <div className="container">
         <div className={styles.footerContainer}>
-          <div className={styles.wrapperUp}>
-            <div className={styles.logo}>
-              <img src={mainLogoBlack} alt="Main logo black" />
-              <span>Superdao</span>
-            </div>
 
-            <div className={styles.socialMedia}>
-              <i className="fa-brands fa-twitter"></i>
-              <i className="fa-solid fa-paper-plane"></i>
-              <i className="fa-solid fa-at"></i>
-            </div>
+          <div className={styles.logo}>
+            <img src={mainLogoBlack} alt="Main logo black" />
+            <span>Superdao</span>
           </div>
 
-          <ul className={styles.wrapperDown}>
+          <ul>
             <li>
               <a href="/#">Roadmap club</a>
             </li>
@@ -30,6 +23,13 @@ const Footer = () => {
               <a href="/#">Jobs</a>
             </li>
           </ul>
+
+          <div className={styles.socialMedia}>
+            <i className="fa-brands fa-twitter"></i>
+            <i className="fa-solid fa-paper-plane"></i>
+            <i className="fa-solid fa-at"></i>
+          </div>
+
         </div>
       </div>
     </footer>
