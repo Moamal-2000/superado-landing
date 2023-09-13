@@ -1,0 +1,249 @@
+@import "../../Sass/mixins";
+
+.roadMap {
+  width: 100%;
+  border-radius: 24px;
+  background: linear-gradient(123deg, #A96BF7 2.02%, #3103B5 101.68%);
+  padding: 52px 70px;
+  margin-bottom: 160px;
+}
+
+@include medium {
+  .roadMap {
+    padding: 36px 52px;
+  }
+}
+
+@include small {
+  .roadMap {
+    padding: 16px;
+  }
+}
+
+.roadMap h2 {
+  color: var(--white);
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 72px;
+}
+
+@include medium {
+  .roadMap h2 {
+    font-size: 2.25rem;
+    line-height: 60px;
+  }
+}
+
+@include small {
+  .roadMap h2 {
+    font-size: 1.375rem;
+    line-height: 28px;
+  }
+}
+
+.roadMap>p {
+  width: 800px;
+  color: var(--white);
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 36px;
+  margin: 4px 0 20px;
+}
+
+@include large {
+  .roadMap>p {
+    width: 632px;
+    margin: 8px 0 28px;
+  }
+}
+
+@include medium {
+  .roadMap>p {
+    font-size: 1.125rem;
+    line-height: 28px;
+    margin: 8px 0 20px;
+  }
+}
+
+@include small {
+  .roadMap>p {
+    width: 336px;
+    font-size: .875rem;
+    line-height: 22px;
+    letter-spacing: -0.3px;
+  }
+}
+
+.roadMap ul {
+  margin-bottom: 44px;
+}
+
+.roadMap ul li {
+  display: flex;
+  align-items: center;
+}
+
+.roadMap ul li img {
+  width: 24px;
+  height: 24px;
+  margin-right: 16px;
+  user-select: none;
+}
+
+@include medium {
+  .roadMap ul li img {
+    margin-right: 12px;
+  }
+}
+
+@include medium {
+  .roadMap ul li img {
+    margin-right: 8px;
+  }
+}
+
+.roadMap ul li p {
+  color: var(--white);
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+@include medium {
+  .roadMap ul li p {
+    font-size: 1.125rem;
+    line-height: 32px;
+  }
+}
+
+@include small {
+  .roadMap ul li p {
+    font-size: .875rem;
+    line-height: 20px;
+  }
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+}
+
+@include small {
+  .buttons {
+    flex-direction: column;
+  }
+}
+
+.buttons button {
+  border: none;
+  cursor: pointer;
+}
+
+.buttons button:first-child {
+  background: linear-gradient(180deg, var(--liner-yellow2));
+  box-shadow: 0 9px 44px 0px rgba(255, 214, 0, .19);
+  color: var(--black-pearl);
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 36px;
+  border-radius: 16px;
+  padding: 16px 40px;
+  margin-right: 28px;
+}
+
+@include medium {
+  .buttons button:first-child {
+    padding: 12px 36px;
+    font-size: 1.125rem;
+    line-height: 36px;
+  }
+}
+
+@include small {
+  .buttons button:first-child {
+    font-size: 1rem;
+    line-height: 32px;
+    border-radius: 12px;
+    width: 100%;
+    padding: 8px;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+}
+
+.buttons button:last-child {
+  background-color: var(--white-opacity15);
+  color: var(--white);
+  border-radius: 16px;
+  padding: 16px 40px;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+@include medium {
+  .buttons button:last-child {
+    padding: 12px 34px;
+    font-size: 1.125rem;
+    line-height: 36px;
+  }
+}
+
+@include small {
+  .buttons button:last-child {
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.15);
+    width: 100%;
+    padding: 8px;
+    font-size: 1rem;
+    line-height: 32px;
+  }
+}
+
+
+
+:root {
+  --white: #ffffff;
+  --very-light-gray: #EDF0F4;
+  --white-opacity10: #ffffff1a;
+  --white-opacity15: #ffffff26;
+  --black: #000000;
+  --lighter-black: #141414;
+  --black-pearl: #10151A;
+  --liner-black: #10151A, #10151A;
+  --dark-blue: #1B2A40;
+  --dark-shade: #172852;
+  --lighter-dark-shade: #262E37;
+  --blue-gray: #2c3034;
+  --gray: #343434;
+  --lighter-gray: #393939;
+  --medium-gray: #8C8C8C;
+  --orange-yellow: #FFD600;
+  --orange-yellow-opacity16: #ffe500;
+  --yellow: #FFE501;
+  --light-yellow: #FFD83D;
+  --light-yellow2: #FFD12F;
+  --liner-yellow: #FFD601, #FFB901;
+  --liner-yellow2: #FFD600, #FFB800;
+  --golden: #F3BA2F;
+  --yellow-gray: #998728;
+  --liner-cyan: #68C0FF, #207ACC;
+  --skyblue: #00ACEE;
+  --cyan-blue: #21A6FA;
+  --cyan-blue-opacity15: #21a7fa26;
+  --green-cyan: #01FFB3;
+  --green-cyan-opacity15: #01ff00;
+  --green: #86F045;
+  --green-opacity15: #86F045;
+  --purple: #8247E5;
+  --liner-purple: #A96BF7, #3103B5;
+  --light-purple: #D04BFF;
+  --light-purple-opacity15: #d04b00;
+  --pink: #FF49B6;
+  --pink-opacity15: #FF49B6;
+  --tomato: #E84142;
+  --orange: #FF6F03;
+  --light-orange: #FF792E;
+  --light-orange-opacity15: #ff7900;
+  --liner-orange: #FF7421, #EC5901;
+}
