@@ -28,7 +28,8 @@
 }
 
 .feature p {
-  width: 290px;
+  min-width: 192px;
+  max-width: 252px;
   font-size: 1.25rem;
   line-height: 1.6;
 }

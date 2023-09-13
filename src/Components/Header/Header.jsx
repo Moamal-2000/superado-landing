@@ -5,16 +5,14 @@ import Nav from "./Nav";
 
 const Header = () => {
   return (
-    <div className="container">
-      <header className={styles.header}>
-        <a href="/" title="Link home page as logo">
-          <img src={mainLogoColored} alt="Superado logo" />
-        </a>
+    <header className={styles.header}>
+      <a href="/" title="Link home page as logo">
+        <img src={mainLogoColored} alt="Superado logo" />
+      </a>
 
-        <Nav />
-        <MobileNav />
-      </header>
-    </div>
+      <Nav />
+      <MobileNav />
+    </header>
   );
 };
 

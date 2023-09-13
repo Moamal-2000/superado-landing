@@ -1,32 +1,25 @@
 @import "../../Sass/mixins";
 
-.website {
-  background-color: var(--blue-gray);
-  padding: 16px 37px 16px 24px;
-  border-radius: 16px;
+.appsSection {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  width: fit-content;
-  position: relative;
-  // min-width: 208px;
+  margin-bottom: 60px;
 }
 
-.logoHolder {
-  width: 44px;
-  height: 44px;
-  margin-right: 16px;
+.apps {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 28px;
+  gap: 20px;
+  max-width: 700px;
 }
 
-.logoHolder img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
 
-.nameWebsite {
-  font-weight: 700;
-  font-size: 1.125rem;
-}
+
+
 
 
 :root {

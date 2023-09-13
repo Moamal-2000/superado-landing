@@ -22,22 +22,18 @@
 }
 
 .nav ul li:not(:last-child) {
-  margin-right: 40px;
+  margin-right: 52px;
 }
 
-@include medium {
+@include large {
   .nav ul li:not(:last-child) {
-    margin-right: 20px;
+    margin-right: 40px;
   }
-}
-
-.nav ul li a {
-
 }
 
 .twitter {
   margin-left: 40px;
-  padding: 10px 16px;
+  padding: 6px 16px 6px 12px;
   border-radius: 8px;
   background-color: var(--lighter-dark-shade);
 }
@@ -51,6 +47,14 @@
 .twitter i {
   margin-right: 10px;
   color: var(--skyblue);
+  font-size: 1.125rem;
+}
+
+.twitter span {
+  display: inline-block;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
 }
 
 

@@ -1,15 +1,15 @@
 @import "../../Sass/mixins";
 
-.titleSection {
+.titleInterSection {
   display: flex;
   align-items: center;
 }
 
-.titleSection img {
+.titleInterSection img {
   margin-right: 8px;
 }
 
-.titleSection h3 {
+.titleInterSection h3 {
   color: var(--orange-yellow);
   font-size: 600;
   font-size: 2.25rem;

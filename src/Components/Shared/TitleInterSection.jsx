@@ -1,13 +1,13 @@
 import { iconWing } from '../../assets/Images'
-import styles from './TitleSection.module.scss'
+import styles from './TitleInterSection.module.scss'
 
-const TitleSection = ({title}) => {
+const TitleInterSection = ({title}) => {
   return (
-    <div className={styles.titleSection}>
+    <div className={styles.titleInterSection}>
       <img src={iconWing} alt="Superado Logo" />
       <h3>{title}</h3>
     </div>
   )
 }
 
-export default TitleSection
+export default TitleInterSection

@@ -1,6 +1,6 @@
 import styles from "./SectionTitle.module.scss";
 
-const SectionTitle = ({ underlineImg, display, children }) => {
+const SectionTitle = ({ underlineImg, display = "block", children }) => {
 
   return (
     <div className={styles.sectionTitle} style={{display: display}}>

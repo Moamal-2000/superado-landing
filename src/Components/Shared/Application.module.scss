@@ -2,7 +2,7 @@
 
 .application {
   background-color: var(--blue-gray);
-  padding: 8px;
+  padding: 8px 20px 8px 8px;
   border-radius: 12px;
   display: flex;
   align-items: center;
@@ -28,7 +28,9 @@
 }
 
 .nameApp {
-  font-weight: 600;
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 32px;
 }
 
 
