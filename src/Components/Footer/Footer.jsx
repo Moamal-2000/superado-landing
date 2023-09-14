@@ -6,10 +6,11 @@ const Footer = () => {
     <footer className={styles.footer}>
       <div className="container">
         <div className={styles.footerContainer}>
-
           <div className={styles.logo}>
-            <img src={mainLogoBlack} alt="Main logo black" />
-            <span>Superdao</span>
+            <a href="../../../index.html">
+              <img src={mainLogoBlack} alt="Main logo black" />
+              <span>Superdao</span>
+            </a>
           </div>
 
           <ul>
@@ -30,6 +31,23 @@ const Footer = () => {
             <i className="fa-solid fa-at"></i>
           </div>
 
+          <p className={styles.info}>
+            Coded in
+            <a href="https://code.visualstudio.com" target="_blank">
+              Visual studio code
+            </a>{" "}
+            by
+            <a
+              href="https://www.linkedin.com/in/moamal-alaa-a4bb15237"
+              target="_blank"
+            >
+              Moamal Alaa
+            </a>
+            , And designed with
+            <a href="https://www.figma.com" target="_blank">
+              Figma
+            </a>
+          </p>
         </div>
       </div>
     </footer>

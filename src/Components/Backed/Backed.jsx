@@ -12,7 +12,7 @@ import styles from "./Backed.module.scss";
 const Backed = () => {
   return (
     <div className={styles.backed}>
-      <SectionTitle underlineImg={underlineImg4}>
+      <SectionTitle underlineImg={underlineImg4} imgPosition="-5px">
         <h2>Backed by</h2>
       </SectionTitle>
 
